@@ -15,7 +15,7 @@ const cats = [
 // Question 1
 
 const cat = {
-    isComplaining: "complain",
+    //isComplaining: "complain",
     complain: function(){
         console.log("Meow!");
     }
@@ -23,11 +23,14 @@ const cat = {
 
 cat.complain()
 
-
-
-
 /*function isCat(complain){
+
 console.log(complain);
 }
 
 isCat("Meow!");*/
+
+// Question 2 
+
+const heading = document.querySelector("h3");
+heading.innerHTML = "Updated heading";
