@@ -75,10 +75,13 @@ const cats = [
 ];
 
 function nameList(list){
-
+    
+    //var list = cats[i].name;
     for(let i = 0; i < nameList.length; i++) {
         console.log(list);
     }
 }
 
-nameList(cats);
+nameList(cats[0].name);
+nameList(cats[1].name);
+nameList(cats[2].name);
