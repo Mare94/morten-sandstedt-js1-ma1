@@ -41,3 +41,19 @@ heading.style.fontSize = "2em";
 
 // Question 4
 
+heading.className += ` subHeading`;
+
+// Question 5
+
+const paragraphs = document.querySelectorAll("p").forEach(e => e.style.color = "red");
+//paragraphs.style.color = "red"
+
+/*for(let i = 0; i <= paragraphs.length; i++){
+    paragraphs[i].style.color = "red";
+}*/
+
+// Question 6
+
+const resultsContainer = document.querySelector(".results")
+resultsContainer.innerHTML = `<p> New paragraph </p>`;
+resultsContainer.style.backgroundColor = "yellow";
