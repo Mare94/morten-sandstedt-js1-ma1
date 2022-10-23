@@ -1,4 +1,4 @@
-const cats = [
+/*const cats = [
     {
         name: "Blob",
         age: 10
@@ -10,7 +10,7 @@ const cats = [
         name: "Blurt",
         age: 21
     }
-];
+];*/
 
 // Question 1
 
@@ -57,3 +57,28 @@ const paragraphs = document.querySelectorAll("p").forEach(e => e.style.color = "
 const resultsContainer = document.querySelector(".results")
 resultsContainer.innerHTML = `<p> New paragraph </p>`;
 resultsContainer.style.backgroundColor = "yellow";
+
+// Question 7
+
+const cats = [
+    {
+        name: "Blob",
+        age: 10,
+    },
+    {
+        name: "Harold",
+    },
+    {
+        name: "Blurt",
+        age: 21,
+    }
+];
+
+function nameList(list){
+
+    for(let i = 0; i < nameList.length; i++) {
+        console.log(list);
+    }
+}
+
+nameList(cats);
