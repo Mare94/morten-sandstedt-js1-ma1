@@ -85,3 +85,39 @@ function nameList(list){
 nameList(cats[0].name);
 nameList(cats[1].name);
 nameList(cats[2].name);
+
+// Question 8
+
+const catContainer = document.querySelector(".cat-container");
+
+let catName1 = cats[0].name;
+let catAge1 = cats[0].age;
+/*if(cats.age !== undefined){
+    catAge = cats[0].age;
+}*/
+let catName2 = cats[1].name;
+let catAge2 = "Age unknown";
+let catName3 = cats[2].name;
+let catAge3 = cats[2].age;
+
+
+
+
+function createCats(cats){
+    catContainer.innerHTML += `
+    <div>
+    <h5>${catName1}</h5>
+    <p>${catAge1}</p>
+    </div>
+    <div>
+    <h5>${catName2}</h5>
+    <p>${catAge2}</p>
+    </div>
+    <div>
+    <h5>${catName3}</h5>
+    <p>${catAge3}</p>
+    </div>
+    `;
+}
+
+createCats(cats)
