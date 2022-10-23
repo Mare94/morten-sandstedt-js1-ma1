@@ -76,12 +76,12 @@ const cats = [
 
 function nameList(list){
     
-    //var list = cats[i].name;
-    for(let i = 0; i < nameList.length; i++) {
+    
+    for(let i = 0; i < cats.length; i++) {
         console.log(list);
     }
 }
-
+//nameList(cats[i].name);
 nameList(cats[0].name);
 nameList(cats[1].name);
 nameList(cats[2].name);
@@ -90,20 +90,55 @@ nameList(cats[2].name);
 
 const catContainer = document.querySelector(".cat-container");
 
-let catName1 = cats[0].name;
-let catAge1 = cats[0].age;
+
+catAge = "Age unknown";
+
+if(cats[1].age !== undefined){
+    catAge = cats[i].age;
+}
+
+function createCats(cats){
+    let html = "";
+
+    for (let i = 0; i < cats.length; i++) {
+        html = html + `<div>
+        <h5>${cats[i].name}</h5>
+        <p>${cats[i].age}</p>
+        </div>`
+}
+
+catContainer.innerHTML = html;
+}
+
+createCats(cats)
+
+/*let html = "";
+
+for (let i = 0; i < cats.length; i++) {
+    html = html + `<div>
+    <h5>${cats[i].name}</h5>
+    <p>${cats[i].age}</p>
+    </div>`
+}
+
+catContainer.innerHTML = html;*/
+
+// or
+
+//let catName1 = cats[0].name;
+//let catAge1 = cats[0].age;
 /*if(cats.age !== undefined){
     catAge = cats[0].age;
 }*/
-let catName2 = cats[1].name;
-let catAge2 = "Age unknown";
-let catName3 = cats[2].name;
-let catAge3 = cats[2].age;
+//let catName2 = cats[1].name;
+//let catAge2 = "Age unknown";
+//let catName3 = cats[2].name;
+//let catAge3 = cats[2].age;
 
 
 
 
-function createCats(cats){
+/*function createCats(cats){
     catContainer.innerHTML += `
     <div>
     <h5>${catName1}</h5>
@@ -120,4 +155,4 @@ function createCats(cats){
     `;
 }
 
-createCats(cats)
+createCats(cats)*/
